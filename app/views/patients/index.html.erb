@@ -1,1 +1,8 @@
 <h1>Patients</h1>
+
+<% @patients.each do |patient| %>
+  Name: <%= patient.name %>
+  Number of Appointments: <%= patient.appointments.count %>
+  <br>
+<% end %>
+  
