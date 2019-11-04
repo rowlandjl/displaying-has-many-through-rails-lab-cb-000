@@ -3,6 +3,6 @@
 
 <% @patient.appointments.each do |app| %>
   Doctor: <%= app.doctor.name %>
-  Appointment Time: <%= app.appointment_datetime %>
+  Appointment Time: <%= app.appointment_datetime.strftime('%B %d, %Y at %H:%M') %>
   <br>
 <% end %>
