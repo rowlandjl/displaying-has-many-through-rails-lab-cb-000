@@ -3,4 +3,6 @@
 
 <% @patient.appointments.each do |app| %>
   Doctor: <%= app.doctor.name %>
+  Appointment Time: <%= app.appointment_datetime %>
+  <br>
 <% end %>
