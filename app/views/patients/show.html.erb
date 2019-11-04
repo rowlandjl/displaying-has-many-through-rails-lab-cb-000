@@ -1,5 +1,6 @@
 <h1>Patient: <%= @patient.name %></h1>
 
-<% @patient.appointments.each do |app| %>
 
+<% @patient.appointments.each do |app| %>
+  Doctor: <%= app.doctor.name %>
 <% end %>
